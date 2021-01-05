@@ -18,4 +18,6 @@ COPY . /var/www/TRX/
 
 RUN chown -R www-data:www-data /var/www/TRX/
 
+RUN python3 project.py list
+
 CMD ["python3", "project.py", "runserver"]
